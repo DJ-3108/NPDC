@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLYMA — Wear Your Climate</title>
+    <meta name="description"
+        content="KLYMA is a smart wrist-worn climate-adaptive wearable providing localized cooling via vascular temperature regulation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">KLYMA</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#science">Science</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn btn-outline" onclick="toggleAuth('login')">Login</button>
+                <button class="btn btn-primary" onclick="toggleAuth('signup')">Join Early Adopter</button>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container grid">
+                <div class="hero-content">
+                    <span class="badge">The Future of Personal Climate Control</span>
+                    <h1>Wear Your <span class="gradient-text">Climate</span></h1>
+                    <p class="lead">Combat heat stress with localized cooling via vascular temperature regulation at the
+                        inner wrist. Digital-first, smart, and adaptive.</p>
+                    <div class="hero-btns">
+                        <button class="btn btn-primary btn-lg" onclick="toggleAuth('signup')">Access Priority
+                            List</button>
+                        <a href="#science" class="btn btn-link">How it works &rarr;</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper reveal">
+                        <img src="assets/hero-collage.png" alt="KLYMA Wearable in action">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gradient"></div>
+        </section>
+
+        <!-- The Problem -->
+        <section class="problem section-padding" id="science">
+            <div class="container text-center">
+                <h2>The Gap in Current Wearables</h2>
+                <p class="subtitle">Most devices only track heat data. KLYMA acts on it.</p>
+                <div class="problem-grid grid">
+                    <div class="problem-card card">
+                        <div class="icon">🌡️</div>
+                        <h3>Passive Monitoring</h3>
+                        <p>Current wearables alert you to heat but offer no relief.</p>
+                    </div>
+                    <div class="problem-card card active">
+                        <div class="icon">❄️</div>
+                        <h3>Active Intervention</h3>
+                        <p>KLYMA uses vascular cooling to lower your perceived temperature instantly.</p>
+                    </div>
+                    <div class="problem-card card">
+                        <div class="icon">📈</div>
+                        <h3>90% Utility</h3>
+                        <p>Research-backed technology designed for high-performance urban living.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Details -->
+        <section class="product-details section-padding dark-bg" id="product">
+            <div class="container grid">
+                <div class="product-image reveal">
+                    <img src="assets/product-render.png" alt="KLYMA Product Render" class="product-shot">
+                </div>
+                <div class="product-info">
+                    <h2>Ergonomic Excellence</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Vascular Cooling</strong>
+                            <p>Localized cooling at the wrist for maximum thermal relief.</p>
+                        </li>
+                        <li>
+                            <strong>Smart Sensors</strong>
+                            <p>Real-time biometric and environmental monitoring.</p>
+                        </li>
+                        <li>
+                            <strong>Adaptive Control</strong>
+                            <p>Automatic cooling activation based on your body's needs.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing section-padding" id="pricing">
+            <div class="container text-center">
+                <h2>Choose Your Experience</h2>
+                <div class="pricing-grid grid">
+                    <div class="pricing-card card">
+                        <h3>Standard</h3>
+                        <div class="price">₹5,000</div>
+                        <ul class="features">
+                            <li>Manual Cooling Activation</li>
+                            <li>Environmental Sensors</li>
+                            <li>Basic Wellness App</li>
+                        </ul>
+                        <button class="btn btn-outline full-width">Reserve Now</button>
+                    </div>
+                    <div class="pricing-card card premium featured">
+                        <div class="pop-tag">Most Popular</div>
+                        <h3>Premium</h3>
+                        <div class="price">₹8,000</div>
+                        <ul class="features">
+                            <li>Auto-Adaptive Cooling</li>
+                            <li>Biometric Health Tracking</li>
+                            <li>Advanced Personalized App</li>
+                            <li>Service Plan Included</li>
+                        </ul>
+                        <button class="btn btn-primary full-width">Join Priority Access</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Corporate CTA -->
+        <section class="cta-banner">
+            <div class="container text-center">
+                <h2>Workforce Solutions</h2>
+                <p>Deploy KLYMA for your delivery or construction fleet.</p>
+                <button class="btn btn-white">Corporate Procurement</button>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq section-padding" id="faq">
+            <div class="container">
+                <h2 class="text-center">Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <details>
+                        <summary>How does vascular cooling work?</summary>
+                        <p>By cooling the blood flow at the inner wrist, KLYMA influences the body's thermoregulation
+                            system, providing a widespread sensation of relief.</p>
+                    </details>
+                    <details>
+                        <summary>Is my biometric data secure?</summary>
+                        <p>Yes. All biometric metrics like heart rate are encrypted and handled with the highest privacy
+                            standards in our ecosystem.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section-padding dark-bg">
+        <div class="container grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">KLYMA</a>
+                <p>Wear Your Climate</p>
+            </div>
+            <div class="footer-links">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#product">Design</a></li>
+                    <li><a href="#science">Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="copy">
+                <p>&copy; 2026 KLYMA Wellness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Overlays (Mocks) -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content card">
+            <span class="close" onclick="closeAuth()">&times;</span>
+            <div id="login-form" class="auth-form">
+                <h2>Welcome Back</h2>
+                <input type="email" placeholder="Email Address">
+                <input type="tel" placeholder="Mobile Number">
+                <input type="password" placeholder="Password">
+                <button class="btn btn-primary full-width">Login</button>
+            </div>
+            <div id="signup-form" class="auth-form" style="display: none;">
+                <h2>Join the Future</h2>
+                <p>Register for early access and exclusive pricing.</p>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+                <input type="tel" placeholder="Mobile Number">
+                <button class="btn btn-primary full-width">Create Account</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
